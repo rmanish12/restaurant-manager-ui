@@ -13,6 +13,8 @@ const messages = {
     NONE: 'None',
     PERSONS: 'Persons',
     NAME: 'Name',
+    REQUIRED_FIELD_ERROR: 'This field cannot be empty',
+    TAKE_ORDER: 'Take Order',
   },
 };
 

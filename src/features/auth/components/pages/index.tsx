@@ -4,7 +4,7 @@ import useTranslation from '../../../../shared/hooks/use-translation';
 import './login-form.scss';
 import useLoginHook from '../../hooks/use-login-hook';
 
-const LoginForm = () => {
+const Index = () => {
   const t = useTranslation();
 
   const { formValues, handleChange, disabled, handleSubmit, hasError } =
@@ -61,4 +61,4 @@ const LoginForm = () => {
   );
 };
 
-export default LoginForm;
+export default Index;

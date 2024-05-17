@@ -20,6 +20,10 @@
 
   .items-list-box {
     margin-top: 35px;
+
+    .list-item:not(:first-child) {
+      margin-top: 15px;
+    }
   }
 
   .account-box {

@@ -10,9 +10,7 @@ const ProtectedRoutes = ({ children }: IProtectedRoutesProps) => {
   const navigate = useNavigate();
   const [isAuthenticated, setAuthenticated] = useState<boolean>(false);
 
-  console.log('isAuthenticated: ', isAuthenticated);
   if (!isAuthenticated) {
-    console.log('navigate');
     navigate(paths.login);
   }
 

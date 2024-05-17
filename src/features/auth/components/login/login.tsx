@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Card, Typography } from '@mui/material';
-import LoginForm from '../login-form/login-form';
+import Index from '../pages';
 import './login.scss';
 import useTranslation from '../../../../shared/hooks/use-translation';
 
@@ -13,7 +13,7 @@ const Login = () => {
         <Typography className="welcome-msg">{t('WELCOME_MSG')}</Typography>
       </Box>
       <Card className="login-card">
-        <LoginForm />
+        <Index />
       </Card>
     </Box>
   );

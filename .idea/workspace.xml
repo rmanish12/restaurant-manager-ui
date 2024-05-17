@@ -4,19 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5232b938-26ee-4bb3-9167-9a93768ce3a1" name="Changes" comment="redux toolkit and loading provider setup">
-      <change afterPath="$PROJECT_DIR$/src/shared/components/toast-container/toast-container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/toaster/toaster.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/components/toaster/toaster.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/models/toaster.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/utils/constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5232b938-26ee-4bb3-9167-9a93768ce3a1" name="Changes" comment="loader added">
+      <change afterPath="$PROJECT_DIR$/src/features/allot-table/models/pages.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/allot-table/models/redux.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/allot-table/store/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/allot-table/store/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/utils/sleep.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/i18n/messages.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/i18n/messages.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/allot-table/hooks/use-allot-table-hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/allot-table/hooks/use-allot-table-hook.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/allot-table/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/allot-table/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/components/login-form/login-form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/components/pages/login-form.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/components/login-form/login-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/components/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/auth/components/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/components/login/login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/auth/hooks/use-login-hook.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/hooks/use-login-hook.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/auth/store/actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/auth/store/actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/protected-routes/protected-routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/protected-routes/protected-routes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/sidebar/side-bar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/sidebar/side-bar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/components/sidebar/side-bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/components/sidebar/side-bar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/constants/paths.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/constants/paths.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +33,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="SCSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -46,26 +52,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/manish.ranjan/Documents/applications/restaurant-manager&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/manish.ranjan/Documents/applications/restaurant-manager/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/manish.ranjan/Documents/applications/restaurant-manager/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/manish.ranjan/Documents/applications/restaurant-manager",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "/Users/manish.ranjan/Documents/applications/restaurant-manager/node_modules/prettier",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "/Users/manish.ranjan/Documents/applications/restaurant-manager/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/features/allot-table/pages" />
@@ -108,7 +116,7 @@
       <workItem from="1715783461740" duration="3776000" />
       <workItem from="1715869647509" duration="3835000" />
       <workItem from="1715930492076" duration="2489000" />
-      <workItem from="1715933288502" duration="7803000" />
+      <workItem from="1715933288502" duration="12142000" />
     </task>
     <task id="LOCAL-00001" summary="basic oomponents setup">
       <option name="closed" value="true" />
@@ -126,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715944538996</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="loader added">
+      <option name="closed" value="true" />
+      <created>1715949146003</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715949146003</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +162,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic oomponents setup" />
     <MESSAGE value="redux toolkit and loading provider setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="redux toolkit and loading provider setup" />
+    <MESSAGE value="loader added" />
+    <option name="LAST_COMMIT_MESSAGE" value="loader added" />
   </component>
 </project>

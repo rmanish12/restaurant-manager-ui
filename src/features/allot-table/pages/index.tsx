@@ -4,6 +4,7 @@ import {
   Button,
   Card,
   FormControl,
+  FormHelperText,
   Grid,
   InputLabel,
   MenuItem,
@@ -39,11 +40,11 @@ const AllotTable = () => {
             <Grid container spacing={2}>
               <Grid item xs={12} md={4} lg={4}>
                 {/* Table Number */}
-                <FormControl fullWidth required>
+                <FormControl fullWidth required error={tableNumber.hasError}>
                   <InputLabel>{t('TABLE_NUM')}</InputLabel>
                   <Select
                     id="tableNumber"
-                    value={tableNumber}
+                    value={tableNumber.value}
                     label={t('TABLE_NUM')}
                     onChange={tableNumberChangeHandler}
                   >
@@ -56,6 +57,7 @@ const AllotTable = () => {
                       );
                     })}
                   </Select>
+                  {tableNumber.hasError && <FormHelperText>{tableNumber.message}</FormHelperText>}
                 </FormControl>
               </Grid>
 
@@ -63,12 +65,7 @@ const AllotTable = () => {
                 {/* Number of people */}
                 <FormControl fullWidth>
                   <InputLabel>{t('PERSONS')}</InputLabel>
-                  <Select
-                    id="persons"
-                    value={totalPerson}
-                    label={t('PERSONS')}
-                    onChange={totalPersonChangeHandler}
-                  >
+                  <Select id="persons" value={totalPerson} label={t('PERSONS')} onChange={totalPersonChangeHandler}>
                     {getPersonsCount().map((personCount) => {
                       return (
                         <MenuItem value={personCount} key={personCount}>
@@ -87,9 +84,11 @@ const AllotTable = () => {
                     id="name"
                     name="name"
                     label={t('NAME')}
-                    value={customerName}
+                    value={customerName.value}
                     required
                     onChange={customerNameChangeHandler}
+                    error={customerName.hasError}
+                    helperText={customerName.hasError ? customerName.message : ''}
                   />
                 </FormControl>
               </Grid>
