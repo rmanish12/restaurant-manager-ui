@@ -1,0 +1,11 @@
+.home-container {
+  display: flex;
+
+  .home-side-bar {
+    flex: 1 1 auto;
+  }
+
+  .home-routes-container {
+    flex: 20 1 auto;
+  }
+}

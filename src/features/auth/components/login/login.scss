@@ -1,0 +1,22 @@
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .welcome-msg-box {
+    margin-bottom: 40px;
+    
+    .welcome-msg {
+      font-size: 30px;
+      font-weight: 500;
+      font-style: italic;
+    }
+  }
+
+  .login-card {
+    width: 500px;
+    padding: 20px;
+  }
+}

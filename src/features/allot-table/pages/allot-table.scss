@@ -1,0 +1,17 @@
+.allot-table-container {
+  padding: 25px;
+
+  .allot-table-box {
+    margin-top: 40px;
+
+    .allot-table-card {
+      padding: 25px;
+
+      .btn-container {
+        margin-top: 25px;
+        display: flex;
+        justify-content: end;
+      }
+    }
+  }
+}

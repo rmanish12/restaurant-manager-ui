@@ -1,0 +1,29 @@
+@import "shared/styles/styles";
+
+.side-bar-container {
+  background-color: white;
+  height: 100vh;
+  overflow-y: auto;
+  padding: 15px;
+
+  .app-title-box {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid;
+
+    .app-title {
+      font-size: 24px;
+      font-style: italic;
+      color: $base-clr;
+    }
+  }
+
+  .items-list-box {
+    margin-top: 35px;
+  }
+
+  .account-box {
+    position: absolute;
+    bottom: 0;
+  }
+}
