@@ -32,7 +32,9 @@
       {
         "endOfLine": "auto"
       }
-    ]
+    ],
+    "import/prefer-default-export": "off",
+    "@typescript-eslint/no-explicit-any": "warn"
   },
   "ignorePatterns": ["webpack.**.js", "build"]
 }

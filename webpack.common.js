@@ -12,7 +12,8 @@ module.exports = {
     alias: {
       shared: path.resolve(__dirname, 'src/shared/'),
       core: path.resolve(__dirname, 'src/core/'),
-      features: path.resolve(__dirname, 'src/features'),
+      features: path.resolve(__dirname, 'src/features/'),
+      store: path.resolve(__dirname, 'src/store/'),
     },
   },
   module: {
