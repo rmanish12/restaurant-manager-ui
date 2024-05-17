@@ -9,6 +9,7 @@ import Shell from './shared/components/shell/shell';
 import theme from './core/theme/theme';
 import { store } from './store/store';
 import { LoaderProvider } from './shared/context/loader-context';
+import { ToastContainer } from './shared/components/toast-container/toast-container';
 
 const App = () => {
   const currentLocale = Locales.EN_US;
@@ -23,7 +24,10 @@ const App = () => {
         >
           <BrowserRouter>
             <LoaderProvider>
-              <Shell />
+              <>
+                <Shell />
+                <ToastContainer />
+              </>
             </LoaderProvider>
           </BrowserRouter>
         </IntlProvider>

@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react';
 import { isEmpty } from 'lodash';
-// import { useNavigate } from 'react-router-dom';
-import { useAppDispatch } from 'store/hook';
 import { ILoginFormValueState } from '../models/pages';
 import { login } from '../store/actions';
 import useApiLoader from '../../../shared/hooks/use-api-loader';
 
 const useLoginHook = () => {
-  // const navigate = useNavigate();
   const { executeApiWithLoader } = useApiLoader();
 
   const [formValues, setFormValues] = useState<ILoginFormValueState>({
@@ -40,7 +37,6 @@ const useLoginHook = () => {
   };
 
   const handleSubmit = () => {
-    console.log(formValues);
     const { username, password } = formValues;
     if (username !== 'admin' && password !== 'admin') {
       setError(true);
